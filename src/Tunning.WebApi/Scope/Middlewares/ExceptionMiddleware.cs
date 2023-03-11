@@ -3,11 +3,14 @@ using System.Text.Json;
 
 namespace Tunning.WebApi.Scope.Middlewares
 {
-    internal sealed class ExceptionHandlingMiddleware : IMiddleware
+    internal sealed class ExceptionMiddleware : IMiddleware
     {
-        private readonly ILogger<ExceptionHandlingMiddleware> _logger;
+        private readonly ILogger<ExceptionMiddleware> _logger;
 
-        public ExceptionHandlingMiddleware(ILogger<ExceptionHandlingMiddleware> logger) => _logger = logger;
+        public ExceptionMiddleware(ILogger<ExceptionMiddleware> logger)
+        {
+            _logger = logger;
+        }
 
         public async Task InvokeAsync(HttpContext context, RequestDelegate next)
         {

@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Tunning.Infra.Core\Tunning.Infra.Core.csproj" />
+  </ItemGroup>
+
 </Project>

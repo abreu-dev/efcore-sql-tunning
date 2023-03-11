@@ -6,7 +6,7 @@ namespace Tunning.WebApi.Scope
     {
         public static void Register(IServiceCollection services)
         {
-            services.AddTransient<ExceptionHandlingMiddleware>();
+            services.AddTransient<ExceptionMiddleware>();
 
             FromProjects(services);
         }

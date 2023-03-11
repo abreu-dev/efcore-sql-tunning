@@ -1,6 +1,6 @@
 ﻿namespace Tunning.Infra.Core.Entities
 {
-    public abstract class Entity
+    public abstract class DataEntity
     {
         public Guid Id { get; set; }
     }
